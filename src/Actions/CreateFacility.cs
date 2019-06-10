@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Trestlebridge.Interfaces;
 using Trestlebridge.Models;
 using Trestlebridge.Models.Facilities;
@@ -15,10 +16,13 @@ namespace Trestlebridge.Actions {
             Console.Write ("> ");
             string input = Console.ReadLine ();
 
+
             switch (Int32.Parse(input))
             {
                 case 1:
                     farm.AddGrazingField(new GrazingField());
+                    Console.WriteLine("You created a grazing field! Good Job!");
+                    Thread.Sleep(3000);
                     break;
                 default:
                     break;
