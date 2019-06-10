@@ -17,11 +17,12 @@ namespace Trestlebridge.Actions {
             Console.Write ("> ");
             string input = Console.ReadLine ();
 
+
             switch (Int32.Parse(input))
             {
                 case 1:
                     farm.AddGrazingField(new GrazingField());
-                    Console.WriteLine("New field created.");
+                    Console.WriteLine("You created a grazing field! Good Job!");
                     Thread.Sleep(3000);
                     break;
                 default:

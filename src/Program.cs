@@ -56,8 +56,8 @@ namespace Trestlebridge
                     DisplayBanner();
                     Console.WriteLine(Trestlebridge);
                     Console.WriteLine("\n\n\n");
-                    Console.WriteLine("Press return key to go back to main menu.");
                     Console.ReadLine();
+                    Console.WriteLine("Press return key to go back to main menu.");
                 }
                 else if (option == "5")
                 {
