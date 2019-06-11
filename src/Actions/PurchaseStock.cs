@@ -21,8 +21,21 @@ namespace Trestlebridge.Actions {
 
             switch (Int32.Parse(choice))
             {
+                // Giving ourselves the ability to create new animals and calling the CollectInput method to place the animal in an available grazing field
                 case 1:
                     ChooseGrazingField.CollectInput(farm, new Cow());
+                    break;
+                case 2: 
+                    ChooseGrazingField.CollectInput(farm, new Ostrich());
+                    break;
+                case 3:
+                    ChooseGrazingField.CollectInput(farm, new Goat());
+                    break;
+                case 4: 
+                    ChooseGrazingField.CollectInput(farm, new Pig());
+                    break;
+                case 5:
+                    ChooseGrazingField.CollectInput(farm, new Sheep());
                     break;
                 default:
                     break;
