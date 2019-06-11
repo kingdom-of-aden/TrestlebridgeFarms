@@ -8,8 +8,13 @@ namespace Trestlebridge.Models
 {
     public class Farm
     {
+
+        // Lists for facilities
+
         //This list needs to have a set in order to be able to add new grazing fields
         public List<GrazingField> GrazingFields { get;} = new List<GrazingField>();
+
+        public List<ChickenCoop> ChickenCoop { get; } = new List<ChickenCoop>();
 
 
         /*

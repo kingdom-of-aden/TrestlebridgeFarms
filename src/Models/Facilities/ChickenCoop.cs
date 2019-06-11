@@ -1,0 +1,49 @@
+using System;
+using System.Text;
+using System.Collections.Generic;
+using Trestlebridge.Interfaces;
+
+
+namespace Trestlebridge.Models.Facilities
+{
+    public class ChickenCoop : IFacility<ChickenCoop>
+    {
+        private int _capacity = 50;
+        private Guid _id = Guid.NewGuid();
+
+        private List<ChickenCoop> _animals = new List<ChickenCoop>();
+
+
+        public double Capacity
+        {
+            get
+            {
+                return _capacity;
+            }
+        }
+
+        public void AddResource(ChickenCoop animal)
+        {
+            //this code adds the animal to the list
+            _animals.Add(animal);
+            // TODO: implement this...
+            // throw new NotImplementedException();
+        }
+
+        public void AddResource(List<ChickenCoop> animals)
+        {
+
+        }
+
+        public override string ToString()
+        {
+            StringBuilder output = new StringBuilder();
+            string shortId = $"{this._id.ToString().Substring(this._id.ToString().Length - 6)}";
+
+            output.Append($"Grazing field {shortId} has {this._animals.Count} animals\n");
+            this._animals.ForEach(a => output.Append($"   {a}\n"));
+
+            return output.ToString();
+        }
+    }
+}
