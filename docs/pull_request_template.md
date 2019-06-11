@@ -17,6 +17,7 @@ Please describe the tests required to verify your changes. Provide instructions 
 
 `git checkout master`  
 `git fetch --all`  
+`git checkout [branch-name]`  
 `cd src`  
 `dotnet run`  
 
