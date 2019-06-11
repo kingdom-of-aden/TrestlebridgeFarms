@@ -9,7 +9,8 @@ namespace Trestlebridge.Actions {
         public static void CollectInput (Farm farm) {
             Console.WriteLine ("1. Grazing field");
             Console.WriteLine ("2. Plowed field");
-            Console.WriteLine("3. Chicken Coop");
+            
+            Console.WriteLine("4. Chicken Coop");
             // Add in other facilities
 
             Console.WriteLine ();
@@ -24,6 +25,11 @@ namespace Trestlebridge.Actions {
                 case 1:
                     farm.AddGrazingField(new GrazingField());
                     Console.WriteLine("You created a grazing field! Good Job!");
+                    Thread.Sleep(1000);
+                    break;
+                case 4: 
+                    farm.AddChickenCoop(new ChickenCoop());
+                    Console.WriteLine("You built a chicken coop! You're so strong! WOW WOW WOW");
                     Thread.Sleep(1000);
                     break;
                 default:
