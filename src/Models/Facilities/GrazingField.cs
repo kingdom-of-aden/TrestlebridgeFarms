@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using System.Threading;
 using System.Collections.Generic;
 using Trestlebridge.Interfaces;
 
@@ -24,8 +25,14 @@ namespace Trestlebridge.Models.Facilities
 
         public void AddResource(IGrazing animal)
         {
+            if(animal is IGrazing){
             //this code adds the animal to the list
             _animals.Add(animal);
+            } else {
+                Console.WriteLine("This animal is no grazer. Try again.");
+                Thread.Sleep(3000);
+
+            }
             // TODO: implement this...
             // throw new NotImplementedException();
         }
