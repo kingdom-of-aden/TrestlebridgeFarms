@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.Text;
 using Trestlebridge.Interfaces;
@@ -19,7 +20,8 @@ namespace Trestlebridge.Models
         {
             Console.WriteLine(typeof(T).ToString());
             switch (typeof(T).ToString())
-            {
+            { 
+                // Add all animals as cases and number
                 case "Cow":
                     GrazingFields[index].AddResource((IGrazing)resource);
                     break;
