@@ -7,9 +7,9 @@ namespace Trestlebridge
 {
     class Program
     {
-        static void DisplayBanner ()
+        static void DisplayBanner()
         {
-            // Console.Clear();
+            Console.Clear();
             Console.WriteLine();
             Console.WriteLine(@"
         +-++-++-++-++-++-++-++-++-++-++-++-++-+
@@ -23,7 +23,7 @@ namespace Trestlebridge
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.White;
-			Console.BackgroundColor = ConsoleColor.DarkMagenta;
+            Console.BackgroundColor = ConsoleColor.DarkMagenta;
 
             Farm Trestlebridge = new Farm();
 
@@ -55,9 +55,10 @@ namespace Trestlebridge
                 {
                     DisplayBanner();
                     Console.WriteLine(Trestlebridge);
+                    Console.WriteLine("Press return key to go back to main menu.");
                     Console.WriteLine("\n\n\n");
                     Console.ReadLine();
-                    Console.WriteLine("Press return key to go back to main menu.");
+
                 }
                 else if (option == "5")
                 {
