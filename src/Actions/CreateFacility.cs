@@ -23,7 +23,7 @@ namespace Trestlebridge.Actions {
                 case 1:
                     farm.AddGrazingField(new GrazingField());
                     Console.WriteLine("You created a grazing field! Good Job!");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     break;
                 default:
                     break;
