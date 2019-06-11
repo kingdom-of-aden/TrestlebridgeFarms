@@ -5,13 +5,13 @@ using Trestlebridge.Models;
 using Trestlebridge.Models.Animals;
 
 namespace Trestlebridge.Actions {
-    public class ChooseGrazingField {
+    public class ChooseGrazingField  {
         public static void CollectInput (Farm farm, IGrazing animal) {
             Console.Clear();
 
             for (int i = 0; i < farm.GrazingFields.Count; i++)
             {
-                Console.WriteLine ($"{i + 1}. Grazing Field");
+                Console.WriteLine ($"{i + 1}. Grazing Field () ");
             }
 
             Console.WriteLine ();

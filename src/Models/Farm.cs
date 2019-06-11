@@ -9,7 +9,7 @@ namespace Trestlebridge.Models
     public class Farm
     {
         //This list needs to have a set in order to be able to add new grazing fields
-        public List<GrazingField> GrazingFields { get; } = new List<GrazingField>();
+        public List<GrazingField> GrazingFields { get; set; } = new List<GrazingField>();
 
         /*
             This method must specify the correct product interface of the
