@@ -14,6 +14,12 @@ Please delete options that are not relevant.
 ## Testing Instructions
 Please describe the tests required to verify your changes. Provide instructions so PR Tester can check functionality. Please also list any relevant details for your tests
 
+
+`git checkout master`  
+`git fetch --all`  
+`cd src`  
+`dotnet run`  
+
 Checklist:
 - [ ] My code follows the style guidelines of this project  
 - [ ] I have performed a self-review of my own code  
