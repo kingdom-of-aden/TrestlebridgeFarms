@@ -26,6 +26,11 @@ namespace Trestlebridge.Actions {
             //choice must be subtracted by 1 in order to select the proper index in the array.
             farm.GrazingFields[choice - 1].AddResource(animal);
 
+            Console.WriteLine();
+            Console.WriteLine("Press return key to go back to main menu.");
+            Console.WriteLine("\n\n\n");
+            Console.ReadLine();
+
             /*
                 Couldn't get this to work. Can you?
                 Stretch goal. Only if the app is fully functional.
