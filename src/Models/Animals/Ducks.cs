@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Trestlebridge.Interfaces;
 
 namespace Trestlebridge.Models.Animals {
-    public class Duck : IResource, IFeed {
+    public class Duck : IResource, IFeed, IEggs {
 
         private Guid _id = Guid.NewGuid();
 
@@ -13,8 +13,14 @@ namespace Trestlebridge.Models.Animals {
             }
         }
 
+        private int _eggsProduced = 6; 
+
         public double FeedPerDay { get; set; } = 0.8;
         public string Type { get; } = "Duck";
+
+        public int Colleggtor() {
+            return _eggsProduced;
+        }
 
         // Methods
         public void Feed () {
