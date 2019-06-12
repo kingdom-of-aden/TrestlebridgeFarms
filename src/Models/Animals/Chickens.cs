@@ -10,6 +10,8 @@ namespace Trestlebridge.Models.Animals {
 
         private int _eggsProduced = 7;
 
+        private double _feathersProduced = .5;
+
 
         private string _shortId {
             get {
@@ -31,6 +33,10 @@ namespace Trestlebridge.Models.Animals {
 
         public int Colleggtor () {
             return _eggsProduced;
+        }
+
+        public double FluffyPillow() {
+            return _feathersProduced;
         }
 
         public override string ToString () {

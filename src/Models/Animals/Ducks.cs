@@ -13,6 +13,8 @@ namespace Trestlebridge.Models.Animals {
             }
         }
 
+        private double _feathersProduced = .75;
+
         private int _eggsProduced = 6; 
 
         public double FeedPerDay { get; set; } = 0.8;
@@ -22,6 +24,10 @@ namespace Trestlebridge.Models.Animals {
             return _eggsProduced;
         }
 
+        public double FluffyPillow() {
+            return _feathersProduced;
+        }
+        
         // Methods
         public void Feed () {
             Console.WriteLine($"Duck {this._shortId} just ate {this.FeedPerDay}kg of feed");
