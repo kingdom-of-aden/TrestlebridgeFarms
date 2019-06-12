@@ -11,6 +11,7 @@ namespace Trestlebridge.Actions {
             Console.WriteLine ("2. Plowed field");
             Console.WriteLine ("3. Duck House"); 
             Console.WriteLine("4. Chicken Coop");
+            Console.WriteLine("5. Natural Field");
 
             // Add in other facilities
 
@@ -36,6 +37,11 @@ namespace Trestlebridge.Actions {
                 case 4:
                     farm.AddChickenCoop(new ChickenCoop());
                     Console.WriteLine("You built a chicken coop! You're so strong! WOW WOW WOW");
+                    Thread.Sleep(1000);
+                    break;
+                case 5:
+                    farm.AddNaturalField(new NaturalField());
+                    Console.WriteLine("You built a Natural Field! You're so strong! WOW WOW WOW");
                     Thread.Sleep(1000);
                     break;
                 default:
