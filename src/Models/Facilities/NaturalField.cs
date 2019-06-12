@@ -26,14 +26,9 @@ namespace Trestlebridge.Models.Facilities
 
         public void AddResource(ISeedProducing plants)
         {
-            if(plants is ISeedProducing){
             //this code adds the plants to the list
             _plants.Add(plants);
-            } else {
-                Console.WriteLine("This plants is no grazer. Try again.");
-                Thread.Sleep(3000);
 
-            }
             // TODO: implement this...
             // throw new NotImplementedException();
         }
